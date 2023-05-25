@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CURRICULUM VITAE</title>
+    <style>
+        body {
+            background-color: #8df1fa;
+            font-family: serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: blue;
+            font-size: 38px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: black;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h3 {
+            color: navy;
+            font-size: 23px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        p {
+            color: black;
+            font-size: 23px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .profile-image {
+            float: right;
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <U><h1>CURRICULUM VITAE</h1></U>
+        <!-- Agregar la etiqueta <img> para mostrar la imagen del perfil -->
+        <img class="profile-image" src="perfil.jpg.jpg" alt="Imagen de perfil">
+    </div>
+    <h3 style="display: inline;">NOMBRES:</h3>
+    <p style="display: inline;">{{ usuario.Nombres }}</p><br>
+<br>
+    <h3 style="display: inline;">APELLIDOS:</h3>
+    <p style="display: inline;">{{ usuario.Apellidos }}</p><br>
+<br>
+    <h3 style="display: inline;">CÉDULA DE IDENTIDAD:</h3>
+    <p style="display: inline;">{{ usuario.Cedula }}</p><br>
+<br>
+    <h3 style="display: inline;">SEXO:</h3>
+    <p style="display: inline;">{{ usuario.Sexo }}</p><br>
+<br>
+    <h3 style="display: inline;">FECHA DE NACIMIENTO:</h3>
+    <p style="display: inline;">{{ usuario.Fexha_nacimiento }}</p><br>
+<br>
+    <h3 style="display: inline;">CORREO:</h3>
+    <p style="display: inline;">{{ usuario.Correo }}</p><br>
+<br>
+    <h3 style="display: inline;">ESTADO CIVIL:</h3>
+    <p style="display: inline;">{{ usuario.Estado_Civil }}</p><br>
+<br>
+    <h3 style="display: inline;">DOMICILIO:</h3>
+    <p style="display: inline;">{{ usuario.Domicilio }}</p><br>
+<br>
+    <h3 style="display: inline;">FORMACIÓN ACADÉMICA:</h3>
+    <p style="display: inline;">{{ usuario.Academia }}</p><br>
+    <p style="display: inline;">{{ usuario.Formacion1 }}</p><br>
+    <p style="display: inline;">{{ usuario.Formacion2 }}</p><br>
+    <p style="display: inline;">{{ usuario.Formacion3 }}</p><br>
+<br>
+    <h3 style="display: inline;">CARRERA Y SEMESTRE CURSANDO:</h3><br>
+    <p style="display: inline;">{{ usuario.Curso }}</p>
+    <p style="display: inline;">{{ usuario.Curso1 }}</p><br>
+    <br>
+<h3>FIRMA:</h3>
+    <h2>{{ usuario.Firma1 }}</h2>
+
+</body>
+</html>
